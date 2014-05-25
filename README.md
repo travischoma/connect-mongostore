@@ -6,6 +6,7 @@
   [![Coverage Status](https://coveralls.io/repos/diversario/connect-mongostore/badge.png?branch=master)](https://coveralls.io/r/diversario/connect-mongostore?branch=master)
   [![Dependency Status](https://gemnasium.com/diversario/connect-mongostore.png)](https://gemnasium.com/diversario/connect-mongostore)
   [![NPM version](https://badge.fury.io/js/connect-mongostore.png)](http://badge.fury.io/js/connect-mongostore)
+  [![Stories in Ready](https://badge.waffle.io/diversario/connect-mongostore.png?label=ready&title=Ready)](https://waffle.io/diversario/connect-mongostore)
   
 ### Why?
   
@@ -63,10 +64,6 @@ via npm:
   - `stringify` If false, connect-mongostore will serialize sessions using `JSON.stringify` before
                 setting them, and deserialize them with `JSON.parse` when getting them.
                 (optional, default: false). Note that deserialization will not revive Dates, Object IDs and other non-plain objects.
-
-The second parameter to the `MongoStore` constructor is a callback which will be called once the database connection is established.
-This is mainly used for the tests, however you can use this callback if you want to wait until the store has connected before
-starting your app.
 
 ## Example
 
